@@ -4,34 +4,34 @@ const mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost:27017/mongo_crud");
 
 //CREATE
-async function create() {
-  try {
-    // const user = new User({ firstName: "alice", age: 44 });
-    // await user.save();
+// async function create() {
+//   try {
+//     // const user = new User({ firstName: "alice", age: 44 });
+//     // await user.save();
 
-    // better way to create user
-    const user = await User.create({
-      firstName: "charlie",
-      age: 20,
-      hobbies: ["painting ", "music"],
-      street: "side street 2",
-      email: "example2@mail.com",
-    });
+//     // better way to create user
+//     const user = await User.create({
+//       firstName: "charlie",
+//       age: 20,
+//       hobbies: ["painting ", "music"],
+//       street: "side street 2",
+//       email: "example2@mail.com",
+//     });
 
-    console.log(user);
-  } catch (e) {
-    console.log(e.message);
-  }
-}
-create();
+//     console.log(user);
+//   } catch (e) {
+//     console.log(e.message);
+//   }
+// }
+// create();
 
-//READ
+// READ;
 async function read() {
   try {
-    const users = await User.findById("645c1a344dcefa5c6753c5ac");
+    const users = await User.findById("6521b7418cb8dee2b4386f53");
 
-    const user = await User.find({});
-    console.log(user);
+    // const user = await User.find({});
+    // console.log(user);
 
     // mongoose query
     const user2 = await User.where("age").equals(40);
@@ -57,3 +57,5 @@ async function read() {
   }
 }
 read();
+
+

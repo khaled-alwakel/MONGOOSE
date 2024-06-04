@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "startDev":"nodemon script.js"
+    "startDev": "nodemon script.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,6 @@
     "mongoose": "^7.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.2"
   }
 }
